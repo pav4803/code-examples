@@ -1,0 +1,294 @@
+/* controls form */
+.flexConteiner {
+  display: flex;
+}
+
+.labelNote {
+  margin-top: 5px;
+  margin-left: 18px;
+  text-align: left;
+  font-size: 16px;
+}
+
+
+
+
+
+
+.uploadFirstTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mainRateBlock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+@media (min-width: 0px) {
+  .block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 40px);
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .popup_topic {
+    font-size: 20px;
+  }
+
+  .popup_descrip {
+    font-size: 20px;
+  }
+
+  .textfild_topic {
+    width: calc(100vw - 40px);
+  }
+
+  .textfild_descript {
+    width: calc(100vw - 40px);
+  }
+}
+
+@media (min-width: 600px) {
+  .block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 40px);
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .popup_topic {
+    font-size: 20px;
+  }
+
+  .popup_descrip {
+    font-size: 20px;
+  }
+
+  .textfild_topic {
+    width: calc(100vw - 40px);
+  }
+
+  .textfild_descript {
+    width: calc(100vw - 40px);
+  }
+}
+
+@media (min-width: 960px) {
+  .mainRateBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 45px;
+  }
+
+  .popup_topic {
+    font-size: 20px;
+  }
+
+  .popup_descrip {
+    font-size: 20px;
+  }
+
+  .textfild_topic {
+    width: 100%;
+  }
+
+  .textfild_descript {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mainRateBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 45px;
+  }
+
+  .popup_topic {
+    font-size: 20px;
+  }
+
+  .popup_descrip {
+    font-size: 20px;
+  }
+
+  .textfild_topic {
+    width: 620px;
+  }
+
+  .textfild_descript {
+    width: 620px;
+    height: 80;
+  }
+}
+
+@media (min-width: 1920px) {
+  .mainRateBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 45px;
+  }
+
+  .popup_topic {
+    font-size: 20px;
+  }
+
+  .popup_descrip {
+    font-size: 20px;
+  }
+
+  .textfild_topic {
+    width: 620px;
+  }
+
+  .textfild_descript {
+    width: 620px;
+    height: 80;
+  }
+}
+
+.popup__closed {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background-color: #cecece;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  display: table-cell;
+  line-height: 37px;
+  color: #000;
+  cursor: pointer;
+}
+
+.popup_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.popup_div_add_themes_appointment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.popup_div_selected {
+  width: 200px;
+}
+
+.selectFiles {
+  width: 620px;
+  margin-bottom: 6px;
+}
+
+.wrapBlok {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 370px;
+}
+
+.files_input {
+  display: none;
+}
+
+.button {
+  width: 100%;
+}
+
+.imgIcon {
+  width: 100%;
+}
+
+.button_imp {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.uploadTexr {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.bottomBlocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bottomBlocks button {
+  width: 250px;
+}
+
+.rightIcon {
+  margin-left: 15px;
+}
+
+.uploadText{
+  margin-bottom: 25px;
+}
+
+.upLoadButton{
+  color: green;
+  cursor: pointer;
+  text-decoration: underline;
+}

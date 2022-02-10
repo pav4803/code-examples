@@ -1,0 +1,13 @@
+/* controls form */
+  .flexConteiner{
+      display: flex;
+  }
+  .labelNote{
+    margin-top: 5px; 
+    margin-left: 18px;
+    text-align: left; 
+    font-size: 16px;
+  }
+
+
+  

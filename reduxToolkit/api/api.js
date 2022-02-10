@@ -81,7 +81,6 @@ export function getSummaryMissings(schoolId, prolongationId) {
 }
 
 //remarks requests
-//GET /v1/{school_id:[0-9]+}/Prolongation/{prolongation_id:[0-9]+}/Remark
 export function getAllProlongationRemarks(schoolId, prolongationId) {
   return get(`${domen}/v1/${schoolId}/Prolongation/${prolongationId}/Remark`);
 }
