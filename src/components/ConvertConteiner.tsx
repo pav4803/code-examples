@@ -1,4 +1,4 @@
-import React, { useEffect, useState, memo } from "react";
+import React, { useEffect, memo } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
 import { useActions } from "../store/hooks/useActions";
@@ -6,7 +6,7 @@ import ConvertComponent from "./ConvertComponent";
 
 const ConvertConteiner: React.FC = () => {
   //get works data state by useSelector
-  let { data, isLoading } = useSelector(
+  let { data } = useSelector(
     (state: RootState) => state.commonSlice
   );
   //use actions creators by hoook useActions from allAC for dispatch
@@ -16,7 +16,6 @@ const ConvertConteiner: React.FC = () => {
     fetchAllData();
     //eslint-disable-next-line
   }, []);
-  console.log(data);
   //render
   return (
     <div>
