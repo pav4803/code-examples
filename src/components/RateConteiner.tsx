@@ -2,9 +2,9 @@ import React, { useEffect, memo } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
 import { useActions } from "../store/hooks/useActions";
-import DeconvertComponent from "./DeconvertComponent";
+import RateComponent from "./RateComponent";
 
-const DeconvertConteiner: React.FC = () => {
+const RateConteiner: React.FC = () => {
   //get works data state by useSelector
   let { data } = useSelector(
     (state: RootState) => state.commonSlice
@@ -19,9 +19,9 @@ const DeconvertConteiner: React.FC = () => {
   //render
   return (
     <div>
-      <DeconvertComponent rates={data}/>
+      <RateComponent rates={data}/>
     </div>
   );
 };
 
-export default memo(DeconvertConteiner);
+export default memo(RateConteiner);

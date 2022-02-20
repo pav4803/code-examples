@@ -12,6 +12,7 @@ const Navbar: FunctionComponent = () => {
     }
     return showBtn;
   };
+  const currentURL = window.location.hash;
   return (
     <div className="navBackground">
       <nav className="navbar">
@@ -20,7 +21,9 @@ const Navbar: FunctionComponent = () => {
             <img className="logoPicture" alt="Git_logo" src={newLogo} />
           </div>
           <div className="title">
-            <h1>Task</h1>
+            {currentURL === "#/convert" && <h1>Convert</h1>}
+            {currentURL === "#/deconvert" && <h1>Deconvert</h1>}
+            {currentURL === "#/rates" && <h1>Rates</h1>}
           </div>
         </div>
         <div className="blockBeetween"></div>

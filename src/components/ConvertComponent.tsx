@@ -57,7 +57,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
             maxLength={undefined}
           />
           <ReturnImput
-            name="firstStageSumm"
+            name=""
             placeholder={`Summ, ${rates[0]?.base_ccy}`}
             form={""}
             type="number"
@@ -94,7 +94,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
             maxLength={undefined}
           />
           <ReturnImput
-            name="firstStageSumm"
+            name=""
             placeholder={`Summ, ${rates[0]?.base_ccy}`}
             form={""}
             type="number"
@@ -132,7 +132,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
             maxLength={undefined}
           />
           <ReturnImput
-            name="firstStageSumm"
+            name=""
             placeholder={`Summ, ${rates[1]?.base_ccy}`}
             form={""}
             type="number"
@@ -169,7 +169,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
             maxLength={undefined}
           />
           <ReturnImput
-            name="firstStageSumm"
+            name=""
             placeholder={`Summ, ${rates[1]?.base_ccy}`}
             form={""}
             type="number"
@@ -207,7 +207,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
             maxLength={undefined}
           />
           <ReturnImput
-            name="firstStageSumm"
+            name=""
             placeholder={`Summ, ${rates[2]?.base_ccy}`}
             form={""}
             type="number"
@@ -244,7 +244,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
             maxLength={undefined}
           />
           <ReturnImput
-            name="firstStageSumm"
+            name=""
             placeholder={`Summ, ${rates[2]?.base_ccy}`}
             form={""}
             type="number"

@@ -6,7 +6,7 @@ interface ConvertComponentType {
   rates: IData[];
 }
 
-const DeconvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
+const RateComponent: React.FC<ConvertComponentType> = ({ rates }) => {
   const initialForm = {
     summ_1: 1000,
     summ_2: 1000,
@@ -261,4 +261,4 @@ const DeconvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
   );
 };
 
-export default memo(DeconvertComponent);
+export default memo(RateComponent);
