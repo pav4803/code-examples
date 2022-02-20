@@ -1,0 +1,113 @@
+.navBackground {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: black;
+  z-index: 998;
+  .navbar {
+    border: 1px solid rgb(179, 179, 179);
+    padding: 2px;
+    width: 100vw;
+    height: 77px;
+    .logoConteiner {
+      margin-left: 10px;
+      height: 70px;
+      .logoPicture {
+        width: 50px;
+        padding-top: 5px;
+        height: auto;
+        cursor: default;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 5px;
+        opacity: 0.8;
+        -moz-opacity: 0.8;
+        filter: alpha(opacity=80) black;
+        -khtml-opacity: 0.8;
+        background-color: #000;
+      }
+      .title {
+        padding: 8px;
+        color: rgb(152, 152, 152); 
+      }
+    }
+    .blockBeetween {
+      padding-top: 4px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .headerBlock {
+      margin-right: 10px;
+      width: 200px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: right;
+      line-height: 30px;
+      background-color: black;
+      box-shadow: 0 0 2px rgb(0, 0, 0), 0 0 2px rgb(0, 0, 0);
+      .nav-link {
+        width: 80px;
+        height: 42px;
+        padding: 0px 1px 0 1px;
+        margin: 0 1px 0 1px;
+        color: rgb(179, 179, 179);
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none;
+        &:hover {
+          color: rgb(245, 191, 16);
+        }
+        div {
+          height: 42px;
+        }
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+      .active {
+        height: 45px;
+        color: rgb(245, 191, 16);
+        border: 1px solid rgb(179, 179, 179);
+      }
+    }
+  }
+}
+nav ul li.item {
+  height: 45px;
+  line-height: 45px;
+  width: auto;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 2px 0 2px;
+}
+.active,
+nav ul li.item:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgb(199, 199, 199), 0 0 2px rgb(179, 179, 179);
+}
+nav ul li.showBtn {
+  width: auto;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 2px 0 2px;
+}
+nav ul li.showBtn:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgb(199, 199, 199), 0 0 2px rgb(179, 179, 179);
+}
