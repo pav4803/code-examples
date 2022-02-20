@@ -20,7 +20,7 @@ const Navbar: FunctionComponent = () => {
             <img className="logoPicture" alt="Git_logo" src={newLogo} />
           </div>
           <div className="title">
-            <h1>React Task</h1>
+            <h1>Task</h1>
           </div>
         </div>
         <div className="blockBeetween"></div>
@@ -28,6 +28,11 @@ const Navbar: FunctionComponent = () => {
           <li className={showBtn} onClick={() => setClass()}>
             <NavLink className="nav-link" to="/convert" exact>
               <div>Convert</div>
+            </NavLink>
+          </li>
+          <li className={showBtn} onClick={() => setClass()}>
+            <NavLink className="nav-link" to="/deconvert" exact>
+              <div>Deconvert</div>
             </NavLink>
           </li>
           <li className={showBtn} onClick={() => setClass()}>

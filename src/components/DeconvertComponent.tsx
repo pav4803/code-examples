@@ -6,14 +6,14 @@ interface ConvertComponentType {
   rates: IData[];
 }
 
-const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
+const DeconvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
   const initialForm = {
-    summ_1: 100,
-    summ_2: 100,
-    summ_3: 100,
-    summ_4: 100,
-    summ_5: 100,
-    summ_6: 100,
+    summ_1: 1000,
+    summ_2: 1000,
+    summ_3: 1000,
+    summ_4: 1000,
+    summ_5: 1000,
+    summ_6: 1000,
   };
 
   let [form, setForm] = useState({ ...initialForm });
@@ -22,12 +22,12 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
     setForm({ ...form, [event.target.name]: event.target.value });
   };
 
-  const convertUsdToBy = Number(rates[0]?.buy) * form.summ_1;
-  const convertUsdToSale = Number(rates[0]?.sale) * form.summ_2;
-  const convertEurToBy = Number(rates[1]?.buy) * form.summ_3;
-  const convertEurToSale = Number(rates[1]?.sale) * form.summ_4;
-  const convertRurToBy = Number(rates[2]?.buy) * form.summ_5;
-  const convertRurToSale = Number(rates[2]?.sale) * form.summ_6;
+  const convertUsdToBy = form.summ_1 / Number(rates[0]?.buy);
+  const convertUsdToSale = form.summ_2 / Number(rates[0]?.sale);
+  const convertEurToBy = form.summ_3 / Number(rates[1]?.buy);
+  const convertEurToSale = form.summ_4 / Number(rates[1]?.sale);
+  const convertRurToBy = form.summ_5 / Number(rates[2]?.buy);
+  const convertRurToSale = form.summ_6 / Number(rates[2]?.sale);
 
   return (
     <div className="convertConteiner">
@@ -47,7 +47,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="summ_1"
-            placeholder={`Convert, ${rates[0]?.ccy}`}
+            placeholder={`Convert, ${rates[0]?.base_ccy}`}
             form={form.summ_1}
             type="number"
             changeHandler={changeHandler}
@@ -58,7 +58,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="firstStageSumm"
-            placeholder={`Summ, ${rates[0]?.base_ccy}`}
+            placeholder={`Summ, ${rates[0]?.ccy}`}
             form={""}
             type="number"
             changeHandler={changeHandler}
@@ -84,7 +84,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="summ_2"
-            placeholder={`Convert, ${rates[0]?.ccy}`}
+            placeholder={`Convert,${rates[0]?.base_ccy}`}
             form={form.summ_2}
             type="number"
             changeHandler={changeHandler}
@@ -95,7 +95,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="firstStageSumm"
-            placeholder={`Summ, ${rates[0]?.base_ccy}`}
+            placeholder={`Summ, ${rates[0]?.ccy}`}
             form={""}
             type="number"
             changeHandler={changeHandler}
@@ -122,7 +122,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="summ_3"
-            placeholder={`Convert, ${rates[1]?.ccy}`}
+            placeholder={`Convert, ${rates[0]?.base_ccy}`}
             form={form.summ_3}
             type="number"
             changeHandler={changeHandler}
@@ -133,7 +133,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="firstStageSumm"
-            placeholder={`Summ, ${rates[1]?.base_ccy}`}
+            placeholder={`Summ, ${rates[1]?.ccy}`}
             form={""}
             type="number"
             changeHandler={changeHandler}
@@ -159,7 +159,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="summ_4"
-            placeholder={`Convert, ${rates[1]?.ccy}`}
+            placeholder={`Convert, ${rates[0]?.base_ccy}`}
             form={form.summ_4}
             type="number"
             changeHandler={changeHandler}
@@ -170,7 +170,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="firstStageSumm"
-            placeholder={`Summ, ${rates[1]?.base_ccy}`}
+            placeholder={`Summ, ${rates[1]?.ccy}`}
             form={""}
             type="number"
             changeHandler={changeHandler}
@@ -197,7 +197,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="summ_5"
-            placeholder={`Convert, ${rates[2]?.ccy}`}
+            placeholder={`Convert, ${rates[0]?.base_ccy}`}
             form={form.summ_5}
             type="number"
             changeHandler={changeHandler}
@@ -208,7 +208,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="firstStageSumm"
-            placeholder={`Summ, ${rates[2]?.base_ccy}`}
+            placeholder={`Summ, ${rates[2]?.ccy}`}
             form={""}
             type="number"
             changeHandler={changeHandler}
@@ -234,7 +234,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="summ_6"
-            placeholder={`Convert, ${rates[2]?.ccy}`}
+            placeholder={`Convert, ${rates[0]?.base_ccy}`}
             form={form.summ_6}
             type="number"
             changeHandler={changeHandler}
@@ -245,7 +245,7 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
           />
           <ReturnImput
             name="firstStageSumm"
-            placeholder={`Summ, ${rates[2]?.base_ccy}`}
+            placeholder={`Summ, ${rates[2]?.ccy}`}
             form={""}
             type="number"
             changeHandler={changeHandler}
@@ -261,4 +261,4 @@ const ConvertComponent: React.FC<ConvertComponentType> = ({ rates }) => {
   );
 };
 
-export default memo(ConvertComponent);
+export default memo(DeconvertComponent);
