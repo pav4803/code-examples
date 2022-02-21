@@ -29,6 +29,21 @@
           color: white;
         }
       }
+      .imgConteiner {
+        height: 65px;
+        padding-top: 10px;
+        img {
+          height: 55px;
+          width: 80px;
+        }
+      }
+      .imgConteinerBTC {
+        height: 75px;
+        img {
+          height: 75px;
+          width: 80px;
+        }
+      }
     }
   }
   @media all and (max-width: 1200px) {

@@ -139,6 +139,17 @@ nav ul li.showBtn:hover {
       width: 100%; }
       .convertConteiner .convertBlock .convertWindowsConteiner .labelClass label {
         color: white; }
+      .convertConteiner .convertBlock .convertWindowsConteiner .imgConteiner {
+        height: 65px;
+        padding-top: 10px; }
+        .convertConteiner .convertBlock .convertWindowsConteiner .imgConteiner img {
+          height: 55px;
+          width: 80px; }
+      .convertConteiner .convertBlock .convertWindowsConteiner .imgConteinerBTC {
+        height: 75px; }
+        .convertConteiner .convertBlock .convertWindowsConteiner .imgConteinerBTC img {
+          height: 75px;
+          width: 80px; }
   @media all and (max-width: 1200px) {
     .convertConteiner {
       width: 80vw; } }
